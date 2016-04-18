@@ -13,10 +13,14 @@ var auto_refresh = setInterval(
 }), 500);
 
 function onAdd(){
-	$("#addit").load("do/update-add.php");
+	if(confirm('Do you want to ADD entry?')){
+		$("#addit").load("do/update-add.php");
+	}
 }
 function onDel(){
-	$("#addit").load("do/update-del.php");
+	if(confirm('Do you really want to DELETE entry?!!!!')){
+		$("#addit").load("do/update-del.php");
+	}
 }
 </script>
 </head>
@@ -37,7 +41,7 @@ function onDel(){
 <br><br><br><br><br><br>
 
 </div>
-by Bhavin
+&copy; Copyright 2016 Bhavin Gandhi. All Rights Reserved, Technosphere 2K16
 </div>
 </body>
 </html>

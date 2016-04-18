@@ -4,3 +4,9 @@
 	color: #fff
 	
 }
+
+.btn-default:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #bfff19;
+}
