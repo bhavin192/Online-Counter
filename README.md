@@ -8,3 +8,4 @@ Server with php support is needed.
 
 You are free to use it, just give the credits.
 
+Demo - http://bhavin192.bplaced.net/counter
