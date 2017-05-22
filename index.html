@@ -1,0 +1,47 @@
+<html>
+<title>CoC Registration</title>
+<head>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="css/custom.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+var auto_refresh = setInterval(
+(function () {
+    $("#count").load("do/process.php"); //Load the content into the div
+}), 500);
+
+function onAdd(){
+	if(confirm('Do you want to ADD entry?')){
+		$("#addit").load("do/update-add.php");
+	}
+}
+function onDel(){
+	if(confirm('Do you really want to DELETE entry?!!!!')){
+		$("#addit").load("do/update-del.php");
+	}
+}
+</script>
+</head>
+
+<body>
+<div class="text-center">  
+<div class="col-lg-offset-3 col-xs-12 col-lg-6">
+<br><br><br>
+<h3>Execlusively Created for Technosphere CoC registration. <br><br>
+
+
+<div id="count" style="font-size: 100px;"></div>
+<div id="addit" style="font-size: 30px;"></div>
+<br>
+<button class="btn  btn-default" onclick="onAdd();"><h2>Add Entry</h2></button>
+
+<button class="btn  btn-default" onclick="onDel();"><h2>Delete</h2></button>
+<br><br><br><br><br><br>
+
+</div>
+&copy; Copyright 2016 Bhavin Gandhi. All Rights Reserved, Technosphere 2K16
+</div>
+</body>
+</html>
